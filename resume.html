@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            position: relative; /* Required for overlay positioning */
+            background-image: url('images/Beach.jpg'); /* Background image */
+            background-size: cover; /* Cover the entire header */
+            background-position: center; /* Center the image */
+            min-height: 300px; /* Minimum height */
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Column layout */
+            justify-content: center; /* Center contents vertically */
+            color: white; /* Text color */
+            text-align: center; /* Center text */
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 123, 255, 0.5); /* Blue tint with opacity */
+            z-index: 0; /* Behind the content */
+        }
+        h1 {
+            font-size: 3em; /* Larger title size */
+            z-index: 1; /* Above the overlay */
+            margin: 0; /* Remove default margin */
+        }
+        h2 {
+            font-size: 2em; /* Larger subtitle size */
+            color: #007bff; /* Color for subheadings */
+        }
+        nav {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center; /* Center the nav bar */
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: normal; /* Non-bold */
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto; /* Centering the main content */
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            font-size: 1.5em; /* Larger font size for experience and skills */
+            margin: 10px 0;
+        }
+        p, ul {
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aaron Erickson</h1>
+    <p>Travel Blogger</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="when-to-travel.html">When to Travel</a>
+    <a href="where-to-travel.html">Where to Travel</a>
+</nav>
+
+<main>
+    <h2>Contact Information</h2>
+    <p>Email: aaron.erickson@email.com</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/aaron-erickson/" target="_blank">linkedin.com/in/aaron-erickson</a></p>
+    
+    <h2>Education</h2>
+    <h3>Bachelor of Arts in Travel and Tourism</h3>
+    <p>University of Brigham Young University, Provo, Utah — Graduating May 2026</p>
+    
+    <h2>Experience</h2>
+    <h3>Travel Blogger</h3>
+    <p>Self-employed — June 2020 - Present</p>
+    <ul>
+        <li>Created engaging content on travel destinations, tips, and experiences.</li>
+        <li>Built a strong online presence through social media platforms.</li>
+    </ul>
+
+    <h3>Customer Service Representative</h3>
+    <p>ABC Travel Agency, Orem, Utah — January 2019 - May 2020</p>
+    <ul>
+        <li>Assisted clients with booking travel arrangements and inquiries.</li>
+        <li>Provided exceptional customer service to improve client
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>Content Creation</li>
+        <li>SEO Optimization</li>
+        <li>Social Media Management</li>
+        <li>Excellent Communication</li>
+        <li>Fluent in English and Spanish</li>
+    </ul>
+</main>
+
+<footer>
+    <p>&copy; 2024 Aaron Erickson</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - When to Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            position: relative; /* Required for overlay positioning */
+            background-image: url('images/Beach.jpg'); /* Background image */
+            background-size: cover; /* Cover the entire header */
+            background-position: center; /* Center the image */
+            min-height: 300px; /* Minimum height */
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Column layout */
+            justify-content: center; /* Center contents vertically */
+            color: white; /* Text color */
+            text-align: center; /* Center text */
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 123, 255, 0.5); /* Blue tint with opacity */
+            z-index: 0; /* Behind the content */
+        }
+        h1 {
+            font-size: 3em; /* Larger title size */
+            z-index: 1; /* Above the overlay */
+            margin: 0; /* Remove default margin */
+        }
+        h2 {
+            margin-top: 30px;
+            font-size: 2em; /* Larger subtitle size */
+        }
+        nav {
+            background-color: #f8f9fa;
+            padding: 15px;
+            text-align: center; /* Center the nav bar */
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff; 
+        }
+        main {
+            padding: 20px;
+            text-align: center; /* Center the main content text */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>When to Travel</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="when-to-travel.html">When to Travel</a>
+    <a href="where-to-travel.html">Where to Travel</a>
+</nav>
+
+<main>
+    <h2>Best Times to Travel</h2>
+    <p>The table below shows the best time of year to travel for each location:</p>
+    <div class='tableauPlaceholder' id='viz1734567605688' style='position: relative'>
+        <noscript>
+            <a href='#'><img alt='ChampionTraveler.com - When to Travel' src='https://public.tableau.com/static/images/9D/9DK8ZBBGZ/1_rss.png' style='border: none' /></a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='path' value='shared/9DK8ZBBGZ' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/9D/9DK8ZBBGZ/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1734567605688');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%'; vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</main>
+
+<footer>
+    <p>&copy; 2024 Aaron Erickson</p>
+</footer>
+
+</body>
+</html>

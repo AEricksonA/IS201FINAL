@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Where to Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            position: relative; /* Required for overlay positioning */
+            background-image: url('images/Beach.jpg'); /* Background image */
+            background-size: cover; /* Cover the entire header */
+            background-position: center; /* Center the image */
+            min-height: 300px; /* Minimum height */
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Column layout */
+            justify-content: center; /* Center contents vertically */
+            color: white; /* Text color */
+            text-align: center; /* Center text */
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 123, 255, 0.5); /* Blue tint with opacity */
+            z-index: 0; /* Behind the content */
+        }
+        h1 {
+            font-size: 3em; /* Larger title size */
+            z-index: 1; /* Above the overlay */
+            margin: 0; /* Remove default margin */
+        }
+        p {
+            font-size: 1.8em; /* Larger paragraph size */
+            z-index: 1; /* Above the overlay */
+        }
+        nav {
+            background-color: #f8f9fa;
+            padding: 15px;
+            text-align: center; /* Center the nav bar */
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        main {
+            padding: 20px;
+            text-align: center; /* Center the main content text */
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Where to Travel</h1>
+    <p>Find your next adventure!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="when-to-travel.html">When to Travel</a>
+    <a href="where-to-travel.html">Where to Travel</a>
+</nav>
+
+<main>
+    <h2>Where Should I Go?</h2>
+    <button id="generate-button">Get Random Destination</button>
+    <h3 id="destination-output"></h3>
+</main>
+
+<footer>
+    <p>&copy; 2024 Aaron Erickson</p>
+</footer>
+
+<script>
+    const destinations = [
+        "Hawaii",
+        "Lava Hot Springs",
+        "Cancun",
+        "Paris",
+        "Tokyo",
+        "New York City",
+        "Bali",
+        "Rome",
+        "Sydney",
+        "London"
+    ];
+
+    document.getElementById('generate-button').addEventListener('click', function() {
+        const randomIndex = Math.floor(Math.random() * destinations.length);
+        document.getElementById('destination-output').innerText = `You should travel to: ${destinations[randomIndex]}!`;
+    });
+</script>
+
+</body>
+</html>

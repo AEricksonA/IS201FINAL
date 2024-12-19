@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center; /* Centering all text */
+        }
+        header {
+            position: relative; /* Required for overlay positioning */
+            background-image: url('images/Beach.jpg');
+            background-size: cover; /* Cover the entire header */
+            background-position: center; /* Center the image */
+            min-height: 300px; /* Minimum height */
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Column layout */
+            justify-content: center; /* Center contents vertically */
+            color: white; /* Text color */
+            padding: 20px; /* Adjusted padding */
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 123, 255, 0.5); /* Blue tint with opacity */
+            z-index: 0; /* Behind the content */
+        }
+        h1 {
+            font-size: 3em; /* Larger title size */
+            z-index: 1; /* Above the overlay */
+            margin: 0; /* Remove default margin */
+        }
+        p {
+            font-size: 1.5em; /* Larger paragraph size */
+            z-index: 1; /* Above the overlay */
+        }
+        nav {
+            background-color: #f8f9fa;
+            padding: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        h3 {
+            margin-top: 30px;
+            font-size: 2em; /* Increased font size for location labels */
+            color: #007bff; /* Changed color for better visibility */
+        }
+        .img-fluid {
+            max-width: 50%; /* Adjusted to be smaller */
+            height: auto;
+            margin: 20px auto; /* Centering the images */
+            display: block; /* Display block for centering */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Travel Blog</h1>
+    <p>Aaron Erickson - Sharing My Travels</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="when-to-travel.html">When to Travel</a>
+    <a href="where-to-travel.html">Where to Travel</a>
+</nav>
+
+<main>
+    <h2>Purpose of This Blog</h2>
+    <p>Welcome to my travel blog! Join me as I share my experiences and the amazing places I've visited.</p>
+
+    <h3><strong>Hawaii</strong></h3>
+    <img src="images/Hawaii.jpg" alt="Hawaii Beach" class="img-fluid">
+    <p>A beautiful paradise known for its stunning beaches and vibrant culture. Me and my siblings loved visiting Hawaii and swimming at the beach.</p>
+
+    <h3><strong>Lava Hot Springs</strong></h3>
+    <img src="images/LavaHotSprings.jpg" alt="Lava Hot Springs" class="img-fluid">
+    <p>A relaxing destination famous for its natural hot springs. Me and my friends enjoy visiting Lava every year. We enjoy floating down the river and camping outside.</p>
+
+    <h3><strong>Cancun</strong></h3>
+    <img src="images/Cancun.jpeg" alt="Cancun" class="img-fluid">
+    <p>A popular resort city known for its beautiful beaches and nightlife. Me and my wife loved visiting Cancun, Mexico for our Honeymoon. Check out the video down below of where we stayed!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nm_3qwn5mKc" frameborder="0" allowfullscreen></iframe>
+</main>
+
+<footer>
+    <p>&copy; 2024 Aaron Erickson</p>
+</footer>
+
+</body>
+</html>
